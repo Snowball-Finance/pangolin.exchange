@@ -52,8 +52,8 @@
     <div class="flex justify-between items-center py-6 border-b-2 border-gray-100 md:justify-start md:space-x-10">
       <div class="flex justify-start lg:flex-1 lg:w-0">
         <a href="/">
-          <span class="sr-only">Pangolin</span>
-          <img class="w-auto h-10 sm:h-14" src="/logo.svg" alt="Pangolin" />
+          <span class="sr-only">Snowball</span>
+          <img width="200px" src="/logo.svg" alt="Snowball" />
         </a>
       </div>
       <div class="-my-2 -mr-2 md:hidden">

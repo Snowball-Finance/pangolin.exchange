@@ -49,7 +49,7 @@
   />
   <meta name="twitter:title" content="Pangolin - Scale Your DeFi Trading" />
   <meta property="og:title" content="Pangolin - Scale Your DeFi Trading" />
-  <title>Pangolin - Scale Your DeFi Trading</title>
+  <title>Snowball Finance - Yield Optimizer</title>
 </svelte:head>
 
 <section class="mt-8">
@@ -57,35 +57,26 @@
     <h1
       class="mt-10 mb-8 max-w-screen-lg text-4xl font-extrabold tracking-tight leading-none text-gray-900 sm:mb-10 sm:mt-14 sm:text-6xl lg:text-7xl"
     >
-      Scale Your DeFi Trading with Pangolin
+      Welcome to Snowball Finance
     </h1>
 
+    <p class="mb-10 max-w-screen-lg text-lg font-medium text-gray-700 sm:mb-11 sm:text-2xl sm:leading-10">
+      A community-driven yield optimizing project. Automatically compounds your LP tokens from Pangolin Exchange.
+    </p>
+
+
     <div class="flex my-10 space-x-6">
-      <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
-        <span class="text-4xl font-semibold text-orange-500">
-          ${Math.floor((parseFloat(stats.totalVolumeAVAX) * avaxPrice.now) / 1e6)}M+
-        </span>
-        <span class="mt-2 font-semibold text-gray-100">Total Volume</span>
-      </div>
-      <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
-        <span class="text-4xl font-semibold text-orange-500">
+      <div class="flex flex-col py-4 px-16 bg-blue-500 rounded-xl">
+        <span class="mt-2 font-semibold text-gray-100">Total Value Locked</span>
+        <span class="text-4xl font-semibold text-gray-100">
           ${Math.floor((parseFloat(stats.totalLiquidityAVAX) * avaxPrice.now) / 1e6)}M+
         </span>
-        <span class="mt-2 font-semibold text-gray-100">Total Liquidity</span>
       </div>
     </div>
 
-    <p class="mb-10 max-w-screen-lg text-lg font-medium text-gray-700 sm:mb-11 sm:text-2xl sm:leading-10">
-      A community-driven decentralized exchange for Avalanche and Ethereum assets with
-      <strong class="text-gray-900">fast settlement</strong>,
-      <strong class="text-gray-900">low transaction fees</strong>, and
-      <strong class="text-gray-900">a democratic distribution</strong>–powered by Avalanche. Pangolin brings you the
-      best trading opportunities to find and maximize your yield.
-    </p>
-
     <div class="flex flex-wrap space-y-4 text-center sm:space-x-4 sm:space-y-0">
       <a
-        class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-orange-50 bg-orange-500 rounded-xl border border-transparent transition-colors duration-200 hover:bg-orange-400 focus:outline-none focus:ring-orange-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:inline sm:w-auto"
+        class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-orange-50 bg-blue-500 rounded-xl border border-transparent transition-colors duration-200 hover:bg-orange-400 focus:outline-none focus:ring-orange-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:inline sm:w-auto"
         href="https://app.pangolin.exchange"
         target="_blank"
       >
@@ -109,6 +100,7 @@
   </div>
 
   <div class="flex flex-col mt-16">
+    <div style="font-size:32px;font-family='Montserrat'">Snowglobes ❄️</div>
     <div class="overflow-x-auto -my-2 sm:-mx-6 lg:-mx-8">
       <div class="inline-block py-2 min-w-full align-middle sm:px-6 lg:px-8">
         <div class="overflow-hidden">
