@@ -48,15 +48,15 @@
 </script>
 
 <div class="relative bg-white">
-  <div class="mx-auto max-w-7xl">
-    <div class="flex justify-between items-center py-6 border-b-2 border-gray-100 md:justify-start md:space-x-10">
-      <div class="flex justify-start lg:flex-1 lg:w-0">
+  <div class="mx-auto max-w-9xl">
+    <div class="flex justify-between items-center py-2 border-b-2 border-gray-100 md:justify-start md:space-x-10">
+      <div class="flex justify-start lg:flex">
         <a href="/">
           <span class="sr-only">Snowball</span>
-          <img width="200px" src="/logo.svg" alt="Snowball" />
+          <img width="200px" src="/logo-snowball.svg" alt="Snowball" />
         </a>
       </div>
-      <div class="-my-2 -mr-2 md:hidden">
+      <div class="-my-2 -mr-2 md:hidden ">
         <button
           on:click="{() => (mobile_open = true)}"
           type="button"
@@ -68,29 +68,29 @@
           </svg>
         </button>
       </div>
-      <nav class="hidden space-x-6 lg:space-x-10 md:flex">
+      <nav class="hidden ml-10 lg:space-x-12 md:flex">
         <a
           href="https://app.pangolin.exchange"
           target="_blank"
-          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+          class="inline-flex items-center text-base font-medium text-darkblue bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
         >
-          Exchange
+          Home
         </a>
 
         <a
           href="https://info.pangolin.exchange"
           target="_blank"
-          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+          class="inline-flex items-center text-base font-medium text-darkblue bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
         >
-          Analytics
+          SnowGlobe
         </a>
 
         <a
           href="https://gov.pangolin.exchange"
           target="_blank"
-          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+          class="inline-flex items-center text-base font-medium text-darkblue bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
         >
-          Governance
+          IceQueen
         </a>
 
         <div class="relative" use:clickOutside on:click_outside="{() => (docs_open = false)}">
@@ -99,9 +99,9 @@
             type="button"
             class="{docs_open
               ? 'text-gray-900'
-              : 'text-gray-500'} transition-colors group inline-flex items-center text-gray-500 hover:text-gray-900 text-base font-medium bg-white rounded-md focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+              : 'text-gray-500'} transition-colors group inline-flex items-center text-darkblue hover:text-gray-900 text-base font-medium bg-white rounded-md focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
           >
-            <span>Docs</span>
+            <span>Instructions</span>
             <svg
               class="{docs_open
                 ? 'text-gray-600'
@@ -207,14 +207,20 @@
         </div>
       </nav>
       <div class="hidden justify-end items-center space-x-4 md:flex md:flex-1 lg:w-0">
-        {#each socials as {name, href, d}}
+        <a class="flex-none py-1 px-2 w-full text-lg font-semibold leading-6 text-orange-50 bg-snowball-blue rounded-lg border border-transparent transition-colors duration-200 hover:bg-snowball-darkblue focus:outline-none focus:ring-orange-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:inline sm:w-auto" href="https://app.pangolin.exchange" target="_blank">Connect Wallet</a>
+        <a class="flex-none py-1 px-2 w-full text-lg font-semibold leading-6 text-orange-50 bg-snowball-lightblue rounded-lg border border-transparent transition-colors duration-200 hover:bg-snowball-darkblue focus:outline-none focus:ring-orange-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:inline sm:w-auto" href="https://app.pangolin.exchange" target="_blank">
+          <svg class="m-1" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.3121 12.3109C16.8398 12.72 15.2853 12.7308 13.8076 12.3422C12.3298 11.9535 10.9817 11.1793 9.90122 10.0989C8.82073 9.01837 8.04657 7.67032 7.6579 6.19253C7.26923 4.71475 7.28 3.16025 7.6891 1.68799L7.68934 1.68806C6.23722 2.09203 4.91629 2.86943 3.85813 3.94281C2.79998 5.0162 2.04155 6.34811 1.65838 7.80586C1.27522 9.26361 1.2807 10.7963 1.67428 12.2513C2.06787 13.7063 2.83581 15.0327 3.90161 16.0985C4.96741 17.1643 6.29387 17.9322 7.74885 18.3258C9.20382 18.7194 10.7365 18.7248 12.1943 18.3417C13.652 17.9585 14.9839 17.2 16.0573 16.1419C17.1307 15.0837 17.9081 13.7628 18.312 12.3106L18.3121 12.3109Z" fill="#33A9FF" stroke="#33A9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <!-- {#each socials as {name, href, d}}
           <a class="text-gray-400 transition-colors duration-200 hover:text-gray-500" href="{href}" target="_blank">
             <span class="sr-only">Pangolin on {name}</span>
             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
               <path d="{d}"></path>
             </svg>
           </a>
-        {/each}
+        {/each} -->
       </div>
     </div>
   </div>

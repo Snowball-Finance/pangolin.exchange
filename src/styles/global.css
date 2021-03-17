@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 /* TODO: Is there a config option in svelte-kit to disable this? */
+
 #svelte-announcer {
   @apply hidden;
 }
@@ -37,4 +38,14 @@
 
 .texture-purty-wood {
   background-image: url("/textures/purty-wood.png");
+}
+.bg-btn1{
+  background: url(/assets/bg-btn1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-btn2{
+  background: url(/assets/bg-btn2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
